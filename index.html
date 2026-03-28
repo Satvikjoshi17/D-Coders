@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <title>HackOrbit 2025 - National Level Online Hackathon | DLG Group &amp; MITS Gwalior</title>
+  <meta name="description"
+    content="Join HackOrbit 2025, Central India's premier national level online hackathon by Digital Learning Group and MITS Gwalior. ₹25K+ prize pool, 6 themes including AI/ML, Web3, FinTech. Register now!" />
+  <meta name="author" content="Digital Learning Group" />
+  <meta name="keywords"
+    content="HackOrbit, MITS hackathon, online hackathon, national hackathon, coding competition, AI hackathon, blockchain hackathon, MITS Gwalior, DLG Group" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#3b82f6" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="geo.region" content="IN-MP" />
+  <meta name="geo.placename" content="Gwalior, Madhya Pradesh, India" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HackOrbit 2025 - National Level Online Hackathon" />
+  <meta property="og:description"
+    content="Join Central India's premier national level online hackathon. ₹25K+ prizes, AI/ML, Web3, FinTech themes. Register now!" />
+  <meta property="og:url" content="https://hackorbit.tech" />
+  <meta property="og:site_name" content="HackOrbit 2025" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://hackorbit.tech/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@hackorbit2025" />
+  <meta name="twitter:title" content="HackOrbit 2025 - National Level Online Hackathon" />
+  <meta name="twitter:description"
+    content="Join Central India's premier national level online hackathon. ₹25K+ prizes, AI/ML, Web3, FinTech themes." />
+  <meta name="twitter:image" content="https://hackorbit.tech/twitter-image.jpg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://hackorbit.tech" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "HackOrbit 2025 - National Level Online Hackathon",
+    "description": "Central India's premier national level online hackathon by Digital Learning Group and MITS Gwalior featuring AI/ML, Web3, FinTech, Healthcare Tech, Sustainability, and Open Innovation themes.",
+    "startDate": "2025-01-15T00:00:00+05:30",
+    "endDate": "2025-01-17T23:59:59+05:30",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://hackorbit.tech",
+      "name": "Online Platform"
+    },
+    "organizer": [
+      { "@type": "Organization", "name": "Digital Learning Group", "url": "https://dlggroup.in" },
+      { "@type": "Organization", "name": "Madhav Institute of Technology & Science", "url": "https://mitsgwalior.in" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "image": "https://hackorbit.tech/og-image.jpg",
+    "url": "https://hackorbit.tech"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══ Loading Screen ═══ -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-orbit">
+      <div class="orbit-ring"></div>
+      <div class="orbit-ring"></div>
+      <div class="orbit-ring"></div>
+      <div class="orbit-core"></div>
+    </div>
+    <div class="loading-text" id="loading-text">Initializing Orbital Systems...</div>
+    <div class="loading-bar-track">
+      <div class="loading-bar-fill" id="loading-bar"></div>
+    </div>
+  </div>
+
+  <!-- ═══ Particle Canvas ═══ -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ═══ Custom Cursor ═══ -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ═══ Mobile Menu Overlay ═══ -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#themes">Themes</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#prizes">Prizes</a>
+    <a href="#partners">Sponsors</a>
+    <a href="#verify">Verify</a>
+  </div>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <span class="logo-dot"></span>
+        HackOrbit 2025
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#themes">Themes</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#prizes">Prizes</a>
+        <a href="#partners">Sponsors</a>
+        <a href="#verify">Verify</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#" class="btn-primary"><span class="material-symbols-outlined" style="font-size: 1rem; margin-right: 0.4rem;">edit</span> Register Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══ Hero Section ═══ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-glow">
+        <div class="glow-orb"></div>
+        <div class="glow-orb"></div>
+        <div class="glow-orb"></div>
+      </div>
+      <div class="hero-content reveal">
+        <span class="hero-badge">🚀 National Level Hackathon</span>
+        <h1>HackOrbit 2025: <span class="text-gradient">Get into the orbit of innovation.</span></h1>
+        <p class="hero-subtitle">A celestial journey of code, creativity, and collaboration. Join thousands of
+          developers to shape the next frontier of technology.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary">Join the Orbit</a>
+          <a href="#about" class="btn-outline">View Details</a>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar reveal">
+        <div class="stats-grid">
+          <div class="stat-card primary">
+            <div class="stat-number" data-count="2500" data-suffix="+">0</div>
+            <div class="stat-label">Registrations</div>
+          </div>
+          <div class="stat-card tertiary">
+            <div class="stat-number" data-count="1300" data-suffix="+">0</div>
+            <div class="stat-label">Teams</div>
+          </div>
+          <div class="stat-card secondary">
+            <div class="stat-number" data-count="162700" data-suffix="+">0</div>
+            <div class="stat-label">Views</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ About Section ═══ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <h2>Empowering the <span class="text-primary">Next Generation</span></h2>
+            <p>HackOrbit is more than just a competition. It's an ecosystem built by students, for students, to foster
+              innovation and technical excellence at a national scale.</p>
+            <div class="about-card reveal reveal-delay-1">
+              <div class="about-icon primary">
+                <span class="material-symbols-outlined">school</span>
+              </div>
+              <div>
+                <h4>Digital Learning Group</h4>
+                <p>Pioneering digital education and technical workshops to bridge the gap between academia and industry.</p>
+              </div>
+            </div>
+            <div class="about-card reveal reveal-delay-2">
+              <div class="about-icon tertiary">
+                <span class="material-symbols-outlined">account_balance</span>
+              </div>
+              <div>
+                <h4>MITS Gwalior</h4>
+                <p>Madhav Institute of Technology &amp; Science, providing a legacy of excellence and the physical orbit
+                  for innovation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image reveal reveal-delay-3">
+            <img src="images/collab_workspace.png"
+              alt="Modern collaborative workspace with developers working together on high-tech projects" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Event Overview ═══ -->
+    <section class="section" id="overview">
+      <div class="container">
+        <div class="overview-glass-panel reveal">
+
+          <!-- Panel header -->
+          <div class="ovw-head">
+            <div class="ovw-eyebrow">
+              <span class="material-symbols-outlined">info</span>
+              Quick Facts
+            </div>
+            <h2 class="ovw-title">Event <span class="text-gradient">Overview</span></h2>
+            <p class="ovw-sub">Everything you need to know about HackOrbit 2025 at a glance.</p>
+          </div>
+
+          <!-- Bento grid of facts -->
+          <div class="ovw-bento">
+
+            <!-- Row 1: 3 equal tiles -->
+            <div class="ovw-tile t-primary reveal reveal-delay-1">
+              <div class="ovw-tile-glow"></div>
+              <div class="ovw-icon-wrap">
+                <span class="material-symbols-outlined">rocket_launch</span>
+              </div>
+              <div class="ovw-tile-body">
+                <div class="ovw-tile-label">Platform</div>
+                <div class="ovw-tile-value">Unstop</div>
+              </div>
+              <div class="ovw-tile-index">01</div>
+            </div>
+
+            <div class="ovw-tile t-tertiary reveal reveal-delay-2">
+              <div class="ovw-tile-glow"></div>
+              <div class="ovw-icon-wrap">
+                <span class="material-symbols-outlined">public</span>
+              </div>
+              <div class="ovw-tile-body">
+                <div class="ovw-tile-label">Scope</div>
+                <div class="ovw-tile-value">National Level</div>
+              </div>
+              <div class="ovw-tile-index">02</div>
+            </div>
+
+            <div class="ovw-tile t-secondary reveal reveal-delay-3">
+              <div class="ovw-tile-glow"></div>
+              <div class="ovw-icon-wrap">
+                <span class="material-symbols-outlined">wifi</span>
+              </div>
+              <div class="ovw-tile-body">
+                <div class="ovw-tile-label">Mode</div>
+                <div class="ovw-tile-value">100% Online</div>
+              </div>
+              <div class="ovw-tile-index">03</div>
+            </div>
+
+            <!-- Row 2: 2 wide tiles -->
+            <div class="ovw-tile t-secondary ovw-tile-wide reveal reveal-delay-4">
+              <div class="ovw-tile-glow"></div>
+              <div class="ovw-icon-wrap">
+                <span class="material-symbols-outlined">groups</span>
+              </div>
+              <div class="ovw-tile-body">
+                <div class="ovw-tile-label">Team Size</div>
+                <div class="ovw-tile-value">Up to 4 Members</div>
+              </div>
+              <div class="ovw-tile-index">04</div>
+            </div>
+
+            <div class="ovw-tile t-primary ovw-tile-wide reveal reveal-delay-5">
+              <div class="ovw-tile-glow"></div>
+              <div class="ovw-icon-wrap">
+                <span class="material-symbols-outlined">how_to_reg</span>
+              </div>
+              <div class="ovw-tile-body">
+                <div class="ovw-tile-label">Registration</div>
+                <div class="ovw-tile-value">Open for All</div>
+              </div>
+              <div class="ovw-tile-index">05</div>
+            </div>
+
+          </div><!-- /.ovw-bento -->
+
+        </div><!-- /.overview-glass-panel -->
+      </div>
+    </section>
+
+    <!-- ═══ Innovation Themes ═══ -->
+    <section class="section" id="themes">
+      <div class="container">
+        <div class="themes-header reveal">
+          <h2>Innovation Themes</h2>
+          <p>Pick your battleground and build solutions that matter.</p>
+        </div>
+        <div class="themes-grid">
+
+          <!-- Card 1: AI & ML -->
+          <div class="theme-flip-wrapper reveal reveal-delay-1">
+            <div class="theme-card-inner">
+              <!-- FRONT -->
+              <div class="theme-card theme-face theme-front c-primary">
+                <div class="theme-num">01</div>
+                <span class="material-symbols-outlined icon">psychology</span>
+                <h3>AI &amp; Machine Learning</h3>
+                <p>Pioneering intelligence to solve complex data challenges and automate future workflows.</p>
+                <div class="flip-hint"><span class="material-symbols-outlined">flip</span> Hover for topics</div>
+              </div>
+              <!-- BACK -->
+              <div class="theme-card theme-face theme-back c-primary">
+                <div class="back-icon"><span class="material-symbols-outlined">psychology</span></div>
+                <h4>Sub-Topics</h4>
+                <ul>
+                  <li>Natural Language Processing</li>
+                  <li>Computer Vision</li>
+                  <li>Predictive Analytics</li>
+                  <li>Generative AI</li>
+                  <li>Autonomous Systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Web3 & Blockchain -->
+          <div class="theme-flip-wrapper reveal reveal-delay-2">
+            <div class="theme-card-inner">
+              <div class="theme-card theme-face theme-front c-secondary">
+                <div class="theme-num">02</div>
+                <span class="material-symbols-outlined icon">currency_bitcoin</span>
+                <h3>Web3 &amp; Blockchain</h3>
+                <p>Building decentralized systems, smart contracts, and the future of the internet.</p>
+                <div class="flip-hint"><span class="material-symbols-outlined">flip</span> Hover for topics</div>
+              </div>
+              <div class="theme-card theme-face theme-back c-secondary">
+                <div class="back-icon"><span class="material-symbols-outlined">currency_bitcoin</span></div>
+                <h4>Sub-Topics</h4>
+                <ul>
+                  <li>Smart Contracts</li>
+                  <li>Decentralized Finance (DeFi)</li>
+                  <li>NFT Platforms</li>
+                  <li>DAOs &amp; Governance</li>
+                  <li>Crypto Wallets</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Fintech -->
+          <div class="theme-flip-wrapper reveal reveal-delay-3">
+            <div class="theme-card-inner">
+              <div class="theme-card theme-face theme-front c-tertiary">
+                <div class="theme-num">03</div>
+                <span class="material-symbols-outlined icon">payments</span>
+                <h3>Fintech Innovation</h3>
+                <p>Disrupting financial services through digital transformation and secure transactions.</p>
+                <div class="flip-hint"><span class="material-symbols-outlined">flip</span> Hover for topics</div>
+              </div>
+              <div class="theme-card theme-face theme-back c-tertiary">
+                <div class="back-icon"><span class="material-symbols-outlined">payments</span></div>
+                <h4>Sub-Topics</h4>
+                <ul>
+                  <li>Digital Payments</li>
+                  <li>Open Banking APIs</li>
+                  <li>Fraud Detection</li>
+                  <li>Micro-lending Platforms</li>
+                  <li>RegTech Solutions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Healthcare -->
+          <div class="theme-flip-wrapper reveal reveal-delay-4">
+            <div class="theme-card-inner">
+              <div class="theme-card theme-face theme-front c-primary">
+                <div class="theme-num">04</div>
+                <span class="material-symbols-outlined icon">health_and_safety</span>
+                <h3>Healthcare Tech</h3>
+                <p>Developing digital solutions for better diagnostics, patient care, and health access.</p>
+                <div class="flip-hint"><span class="material-symbols-outlined">flip</span> Hover for topics</div>
+              </div>
+              <div class="theme-card theme-face theme-back c-primary">
+                <div class="back-icon"><span class="material-symbols-outlined">health_and_safety</span></div>
+                <h4>Sub-Topics</h4>
+                <ul>
+                  <li>AI Diagnostics</li>
+                  <li>Telemedicine Apps</li>
+                  <li>Wearable Health Tech</li>
+                  <li>Mental Health Platforms</li>
+                  <li>Drug Discovery AI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Sustainability -->
+          <div class="theme-flip-wrapper reveal reveal-delay-5">
+            <div class="theme-card-inner">
+              <div class="theme-card theme-face theme-front c-tertiary">
+                <div class="theme-num">05</div>
+                <span class="material-symbols-outlined icon">eco</span>
+                <h3>Sustainability</h3>
+                <p>Engineering eco-friendly tech to combat climate change and promote green living.</p>
+                <div class="flip-hint"><span class="material-symbols-outlined">flip</span> Hover for topics</div>
+              </div>
+              <div class="theme-card theme-face theme-back c-tertiary">
+                <div class="back-icon"><span class="material-symbols-outlined">eco</span></div>
+                <h4>Sub-Topics</h4>
+                <ul>
+                  <li>Carbon Footprint Tracking</li>
+                  <li>Smart Grid Energy</li>
+                  <li>Waste Management AI</li>
+                  <li>Green Supply Chains</li>
+                  <li>Climate Modelling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Open Innovation -->
+          <div class="theme-flip-wrapper reveal reveal-delay-6">
+            <div class="theme-card-inner">
+              <div class="theme-card theme-face theme-front c-secondary">
+                <div class="theme-num">06</div>
+                <span class="material-symbols-outlined icon">lightbulb</span>
+                <h3>Open Innovation</h3>
+                <p>Unleashing pure creativity without boundaries—build whatever you can dream of.</p>
+                <div class="flip-hint"><span class="material-symbols-outlined">flip</span> Hover for topics</div>
+              </div>
+              <div class="theme-card theme-face theme-back c-secondary">
+                <div class="back-icon"><span class="material-symbols-outlined">lightbulb</span></div>
+                <h4>Sub-Topics</h4>
+                <ul>
+                  <li>EdTech Innovations</li>
+                  <li>Smart City Solutions</li>
+                  <li>Gaming &amp; AR/VR</li>
+                  <li>Social Impact Tools</li>
+                  <li>Any Creative Idea!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Roadmap Section ═══ -->
+    <section id="timeline" class="section section-roadmap">
+      <!-- Background Decor -->
+      <div class="roadmap-bg-decor"></div>
+      <div class="roadmap-glow-orb"></div>
+
+      <div class="container relative z-10">
+        <!-- Header -->
+        <div class="section-header reveal">
+          <h2>Roadmap to the Stars</h2>
+          <p>The celestial journey of HackOrbit 2025 constellation.</p>
+        </div>
+
+        <!-- Vertical Timeline Container -->
+        <div class="roadmap-container">
+          <!-- Central Line -->
+          <div class="roadmap-line"></div>
+
+          <div class="roadmap-steps">
+            <!-- Step 1: Registration Opens -->
+            <div class="roadmap-step reveal" data-start="2025-06-17" data-end="2025-07-04">
+              <div class="roadmap-content left">
+                <h4 class="text-primary">Registration Opens</h4>
+                <p>Secure your spot in the orbit and begin your journey.</p>
+                <div class="step-status"></div>
+              </div>
+              <div class="roadmap-icon-wrap primary">
+                <span class="material-symbols-outlined step-icon-inner">how_to_reg</span>
+              </div>
+              <div class="roadmap-spacer"></div>
+            </div>
+
+            <!-- Step 2: Registration Closes -->
+            <div class="roadmap-step reveal reveal-delay-1" data-start="2025-07-05" data-end="2025-07-05">
+              <div class="roadmap-spacer"></div>
+              <div class="roadmap-icon-wrap tertiary">
+                <span class="material-symbols-outlined step-icon-inner">event_busy</span>
+              </div>
+              <div class="roadmap-content right">
+                <h4 class="text-tertiary">Registration Closes</h4>
+                <p>Last day to board the mission. No late entries allowed.</p>
+                <div class="step-status"></div>
+              </div>
+            </div>
+
+            <!-- Step 3: PPT Submission -->
+            <div class="roadmap-step reveal reveal-delay-2" data-start="2025-07-05" data-end="2025-07-07">
+              <div class="roadmap-content left">
+                <h4 class="text-secondary">Round 1: PPT Submission</h4>
+                <p>Submit your concept pitch and wireframes for initial screening.</p>
+                <div class="step-status"></div>
+              </div>
+              <div class="roadmap-icon-wrap secondary">
+                <span class="material-symbols-outlined step-icon-inner">description</span>
+              </div>
+              <div class="roadmap-spacer"></div>
+            </div>
+
+            <!-- Step 4: Final Showdown -->
+            <div class="roadmap-step reveal reveal-delay-3" data-start="2025-07-08T11:00:00" data-end="2025-07-09T23:00:00">
+              <div class="roadmap-spacer"></div>
+              <div class="roadmap-icon-wrap primary">
+                <span class="material-symbols-outlined step-icon-inner">code</span>
+              </div>
+              <div class="roadmap-content right">
+                <h4 class="text-primary">Final Showdown</h4>
+                <p>36 hours of intense building, mentorship, and development.</p>
+                <div class="step-status"></div>
+              </div>
+            </div>
+
+            <!-- Step 5: Submission Deadline -->
+            <div class="roadmap-step reveal reveal-delay-4" data-start="2025-07-09T23:00:00" data-end="2025-07-10T02:00:00">
+              <div class="roadmap-content left">
+                <h4 class="text-error" style="color: #ff5555;">Submission Deadline</h4>
+                <p>Wrap up your mission and upload your project files on Unstop.</p>
+                <div class="step-status"></div>
+              </div>
+              <div class="roadmap-icon-wrap error">
+                <span class="material-symbols-outlined step-icon-inner">cloud_upload</span>
+              </div>
+              <div class="roadmap-spacer"></div>
+            </div>
+
+            <!-- Step 6: Results Announcement -->
+            <div class="roadmap-step reveal reveal-delay-5" data-start="2025-07-15" data-end="2025-07-16">
+              <div class="roadmap-spacer"></div>
+              <div class="roadmap-icon-wrap tertiary">
+                <span class="material-symbols-outlined step-icon-inner">emoji_events</span>
+              </div>
+              <div class="roadmap-content right">
+                <h4 class="text-tertiary">Results Announcement</h4>
+                <p>The winners are revealed! Celebration and prize distribution.</p>
+                <div class="step-status"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        /**
+         * Live Timeline Logic
+         */
+        const updateTimelinePhases = () => {
+          const now = new Date().getTime();
+          const steps = document.querySelectorAll('.roadmap-step');
+          
+          steps.forEach(step => {
+            const startStr = step.dataset.start;
+            const endStr = step.dataset.end;
+            const start = new Date(startStr).getTime();
+            const end = new Date(endStr).getTime();
+            
+            const statusBox = step.querySelector('.step-status');
+            const iconBox = step.querySelector('.roadmap-icon-wrap');
+            
+            if (now < start) {
+              // Upcoming Phase
+              statusBox.innerHTML = `
+                <span class="status-badge upcoming">
+                  <span class="status-dot"></span> Upcoming
+                </span>`;
+              step.style.opacity = '0.4';
+            } 
+            else if (now >= start && now <= end) {
+              // Live Phase
+              statusBox.innerHTML = `
+                <span class="status-badge live">
+                  <span class="live-ping">
+                    <span class="ping-slow"></span>
+                    <span class="ping-fast"></span>
+                  </span> Live Now
+                </span>`;
+              step.style.opacity = '1';
+              iconBox.classList.add('live-glow');
+            } 
+            else {
+              // Completed Phase
+              statusBox.innerHTML = `
+                <span class="status-badge completed">
+                  <span class="material-symbols-outlined">done_all</span> Mission Completed
+                </span>`;
+              step.style.opacity = '0.7';
+              iconBox.classList.add('completed-style');
+            }
+          });
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+          updateTimelinePhases();
+          setInterval(updateTimelinePhases, 30000);
+        });
+      </script>
+    </section>
+
+    <!-- ═══ Prizes Section ═══ -->
+    <section class="section prizes-section" id="prizes">
+      <!-- Ambient background glows -->
+      <div class="prizes-ambient">
+        <div class="ambient-orb gold-orb"></div>
+        <div class="ambient-orb silver-orb"></div>
+        <div class="ambient-orb bronze-orb"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="prizes-eyebrow">
+            <span class="material-symbols-outlined">emoji_events</span>
+            Hall of Champions
+          </div>
+          <h2>Prize Pool</h2>
+          <p>Over <strong style="color:#fbbf24">₹25,000</strong> worth of prizes, goodies, certificates, and opportunities.</p>
+        </div>
+        
+        <div class="prizes-podium reveal">
+
+          <!-- Silver (2nd) -->
+          <div class="prize-card silver-card">
+            <div class="card-shine"></div>
+            <div class="prize-rank-ring">
+              <span class="rank-label">2nd</span>
+            </div>
+            <div class="prize-medal">🥈</div>
+            <div class="prize-title">1st Runner Up</div>
+            <div class="prize-amount">₹7,000</div>
+            <div class="prize-divider"></div>
+            <ul class="prize-perks-list">
+              <li><span class="material-symbols-outlined">check_circle</span> Cash Prize + Certificates</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Exclusive Swag Kit</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Partner Coupons</li>
+            </ul>
+          </div>
+
+          <!-- Gold (1st) — elevated center -->
+          <div class="prize-card gold-card">
+            <div class="card-shine"></div>
+            <div class="gold-orbit-ring"></div>
+            <div class="prize-crown">
+              <span class="material-symbols-outlined">military_tech</span>
+            </div>
+            <div class="prize-rank-ring gold-ring">
+              <span class="rank-label">1st</span>
+            </div>
+            <div class="prize-medal">🥇</div>
+            <div class="prize-title">Grand Winner</div>
+            <div class="prize-amount">₹10,000</div>
+            <div class="prize-divider"></div>
+            <ul class="prize-perks-list">
+              <li><span class="material-symbols-outlined">check_circle</span> Cash Prize + Certificates</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Mentorship Sessions</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Internship Opportunities</li>
+            </ul>
+          </div>
+
+          <!-- Bronze (3rd) -->
+          <div class="prize-card bronze-card">
+            <div class="card-shine"></div>
+            <div class="prize-rank-ring">
+              <span class="rank-label">3rd</span>
+            </div>
+            <div class="prize-medal">🥉</div>
+            <div class="prize-title">2nd Runner Up</div>
+            <div class="prize-amount">₹5,000</div>
+            <div class="prize-divider"></div>
+            <ul class="prize-perks-list">
+              <li><span class="material-symbols-outlined">check_circle</span> Cash Prize + Certificates</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Premium Resources</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Community Recognition</li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="text-center reveal prizes-footnote">
+          <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle;margin-right:.4rem;color:#a78bfa">stars</span>
+          <span>Special prizes for Best All-Girls Team, Best Innovation per theme &amp; Community Favorites</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Orbital Partners ═══ -->
+    <section class="section section-alt" id="partners">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Our Sponsors</h2>
+          <p>Powered by the industry's leading tech giants.</p>
+        </div>
+        
+        <div class="sponsor-bento-grid reveal">
+          <!-- Featured Sponsor: GeeksforGeeks -->
+          <a href="https://www.geeksforgeeks.org/" target="_blank" class="sponsor-tile featured" style="--brand-color: #2F8D46;">
+            <div class="sponsor-glow"></div>
+            <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="GeeksforGeeks" class="sponsor-logo">
+          </a>
+          
+          <!-- InterviewBuddy -->
+          <a href="https://www.interviewbuddy.in/" target="_blank" class="sponsor-tile" style="--brand-color: #00AEEF;">
+            <div class="sponsor-glow"></div>
+            <img src="https://www.interviewbuddy.in/Content/assets/img/logo.png" alt="InterviewBuddy" class="sponsor-logo">
+          </a>
+
+          <!-- .xyz Domains -->
+          <a href="https://gen.xyz/" target="_blank" class="sponsor-tile" style="--brand-color: #6B5CE7;">
+            <div class="sponsor-glow"></div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/.xyz_logo.svg" alt=".xyz Domains" class="sponsor-logo">
+          </a>
+
+          <!-- CodeCrafters -->
+          <a href="https://codecrafters.io/" target="_blank" class="sponsor-tile" style="--brand-color: #FF6B35;">
+            <div class="sponsor-glow"></div>
+            <img src="https://codecrafters.io/images/logo-light.svg" alt="CodeCrafters" class="sponsor-logo">
+          </a>
+
+          <!-- Featured Sponsor: Unstop -->
+          <a href="https://unstop.com/" target="_blank" class="sponsor-tile featured" style="--brand-color: #0073E6;">
+            <div class="sponsor-glow"></div>
+            <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg" alt="Unstop" class="sponsor-logo">
+          </a>
+
+          <!-- T.I.M.E Gwalior -->
+          <a href="https://www.time4education.com/" target="_blank" class="sponsor-tile" style="--brand-color: #D4213D;">
+            <div class="sponsor-glow"></div>
+            <img src="https://www.time4education.com/assets/images/time-logo.svg" alt="T.I.M.E Gwalior" class="sponsor-logo">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Organizing Committee ═══ -->
+    <section class="section" id="committee">
+      <div class="container text-center">
+        <div class="section-header reveal" style="margin-bottom: 3rem;">
+          <h2 style="font-size: 2.2rem; font-weight: 700; color: #22d3ee; text-transform: uppercase; letter-spacing: 0.05em;">Organizing Committee</h2>
+          <p style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.9rem; color: var(--color-text-dim);">> Meet the minds behind HackOrbit</p>
+        </div>
+        
+        <div class="committee-tier tier-1 reveal">
+          <div class="team-card" style="--card-color: #a855f7;">
+            <div class="team-avatar"><img src="" alt="Dr. Punit Kumar Johari" /></div>
+            <h4 style="color: var(--card-color);">Dr. Punit Kumar Johari</h4>
+            <div class="role">COORDINATOR<br>DLG Club</div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="committee-tier tier-2 reveal reveal-delay-1">
+          <div class="team-card" style="--card-color: #3b82f6;">
+            <div class="team-avatar"><img src="" alt="Shiv Shrivastava" /></div>
+            <h4 style="color: var(--card-color);">Shiv Shrivastava</h4>
+            <div class="role">PRESIDENT<br>DLG Club</div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+
+          <div class="team-card" style="--card-color: #a855f7;">
+            <div class="team-avatar"><img src="" alt="Pooja Bhagel" /></div>
+            <h4 style="color: var(--card-color);">Pooja Bhagel</h4>
+            <div class="role">VICE PRESIDENT<br>DLG Club</div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+
+          <div class="team-card" style="--card-color: #10b981;">
+            <div class="team-avatar"><img src="" alt="Tanmay Garg" /></div>
+            <h4 style="color: var(--card-color);">Tanmay Garg</h4>
+            <div class="role" style="color: #f59e0b;">MANAGEMENT HEAD<br><span style="color:var(--color-text-dim);">DLG Club</span></div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+
+          <div class="team-card" style="--card-color: #0ea5e9;">
+            <div class="team-avatar"><img src="" alt="Shivraj Singh" /></div>
+            <h4 style="color: var(--card-color);">Shivraj Singh</h4>
+            <div class="role" style="color: #f59e0b;">TECHNICAL HEAD<br><span style="color:var(--color-text-dim);">DLG Club</span></div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+
+          <div class="team-card" style="--card-color: #f97316;">
+            <div class="team-avatar"><img src="" alt="Prashant Pippal" /></div>
+            <h4 style="color: var(--card-color);">Prashant Pippal</h4>
+            <div class="role" style="color: #f59e0b;">MARKETING HEAD<br><span style="color:var(--color-text-dim);">DLG Club</span></div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="committee-tier tier-3 reveal reveal-delay-2">
+          <div class="team-card" style="--card-color: #10b981;">
+            <div class="team-avatar"><img src="" alt="Riya Payak" /></div>
+            <h4 style="color: var(--card-color);">Riya Payak</h4>
+            <div class="role">MARKETING HEAD<br>DLG Club</div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+
+          <div class="team-card" style="--card-color: #eab308;">
+            <div class="team-avatar"><img src="" alt="Yashshav Khandelwal" /></div>
+            <h4 style="color: var(--card-color);">Yashshav Khandelwal</h4>
+            <div class="role" style="color: #f59e0b;">CONTENT HEAD<br><span style="color:var(--color-text-dim);">DLG Club</span></div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+
+          <div class="team-card" style="--card-color: #ec4899;">
+            <div class="team-avatar"><img src="" alt="Sanjay Singh Lodhi" /></div>
+            <h4 style="color: var(--card-color);">Sanjay Singh Lodhi</h4>
+            <div class="role">Video Editing Head<br>DLG Club</div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+
+          <div class="team-card highlight-card" style="--card-color: #eab308;">
+            <div class="badge-creator">CREATOR</div>
+            <div class="team-avatar"><img src="" alt="Ayan Ahmed Khan" /></div>
+            <h4 style="color: var(--card-color);">Ayan Ahmed Khan</h4>
+            <div class="role">WEB DEVELOPER<br>DLG Group</div>
+            <a href="#" class="btn-linkedin green-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+
+          <div class="team-card" style="--card-color: #8b5cf6;">
+            <div class="team-avatar"><img src="" alt="Gagandeep Kushwah" /></div>
+            <h4 style="color: var(--card-color);">Gagandeep Kushwah</h4>
+            <div class="role">EXECUTIVE MEMBER<br>DLG Club</div>
+            <a href="#" class="btn-linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="in"> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FAQ Section ═══ -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Common Queries</h2>
+          <p>Got questions? We've got answers.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal reveal-delay-1">
+            <button class="faq-question">
+              <span>Who can participate in HackOrbit?</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div class="faq-answer">
+              <p>Any university student across India can participate. We welcome beginners and experts alike! Form a
+                team of up to 4 members and register on Unstop.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-2">
+            <button class="faq-question">
+              <span>Is there any registration fee?</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div class="faq-answer">
+              <p>No, HackOrbit 2025 is completely free for all registered and shortlisted participants. Zero cost to
+                join!</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-3">
+            <button class="faq-question">
+              <span>What are the prize categories?</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div class="faq-answer">
+              <p>We have prizes for Top 3 Teams, Best All-Girls Team, Best Innovation in each theme, and community
+                favorite projects. Total prize pool exceeds ₹25,000+.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-4">
+            <button class="faq-question">
+              <span>How does the hackathon work?</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div class="faq-answer">
+              <p>Register your team → Submit your idea → Get shortlisted → Build your prototype in 48 hours → Pitch to
+                judges → Win prizes! It's a fully online hackathon.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-5">
+            <button class="faq-question">
+              <span>Will we get certificates?</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! All participants receive a digital certificate of participation. Winners and top performers get
+                special merit certificates verified by MITS Gwalior and DLG.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Community CTA ═══ -->
+    <section class="section" id="community">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-glow"></div>
+          <h2>Join the Community</h2>
+          <p>Connect with fellow hackers, find teammates, and get live updates from the organizers.</p>
+          <div class="social-links">
+            <a class="social-btn discord" href="#">
+              <span class="material-symbols-outlined">forum</span>
+              <span>Discord</span>
+            </a>
+            <a class="social-btn instagram" href="#">
+              <span class="material-symbols-outlined">photo_camera</span>
+              <span>Instagram</span>
+            </a>
+            <a class="social-btn whatsapp" href="#">
+              <span class="material-symbols-outlined">chat</span>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">Hack Orbit</div>
+          <p>Navigating the digital frontier. A premier national hackathon hosted by MITS Gwalior and Digital Learning
+            Group.</p>
+        </div>
+        <div class="footer-nav-columns">
+          <div class="footer-nav">
+            <h5>Navigate</h5>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#themes">Themes</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+              <li><a href="#prizes">Prizes</a></li>
+              <li><a href="#partners">Partners</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">WhatsApp</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h5>Newsletter</h5>
+          <div class="newsletter-form">
+            <input type="email" placeholder="orbital@mail.com" aria-label="Email for newsletter" />
+            <button aria-label="Subscribe">
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 HackOrbit. Powered by Digital Learning Group &amp; MITS Gwalior.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
