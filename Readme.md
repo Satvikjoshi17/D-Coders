@@ -42,11 +42,11 @@ Since this is a frontend-focused project, no complex server setup is required.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/hackorbit-2025.git
+   git clone https://github.com/Satvikjoshi17/D-Coders.git
    ```
 2. **Navigate to the directory:**
    ```bash
-   cd hackorbit-2025
+   cd hackorbit-2026
    ```
 3. **Open the project:**
    Simply open `hckthon.html` in any modern web browser to view the site.
